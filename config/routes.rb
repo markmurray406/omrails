@@ -1,4 +1,6 @@
 Omrails::Application.routes.draw do
+  devise_for :users
+
   get 'about' => 'pages#about'
   #set home page to localhost3000, not localhost3000/home
   root :to => 'pages#home'
